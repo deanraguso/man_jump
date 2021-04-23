@@ -104,6 +104,11 @@ function update(){
         gameState.buildPlatforms();
     }
 
+    if (gameState.player.body.y > game.config.height){
+        alert("You lose m8!")
+        this.scene.restart();
+    }
+
 }
 
 
